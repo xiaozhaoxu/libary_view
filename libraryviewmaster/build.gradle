@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.github.rey5137:material:1.2.4'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+
+
+    //   compile 'cn.bingoogolapple:bga-refreshlayout:latestVersion@aar'    // https://github.com/bingoogolapple/BGARefreshLayout-Android
+
+    // 对各种控件实现多种下拉刷新效果、上拉加载更多以及配置自定义头部广告位
+
+    //   compile 'com.github.frank-zhu:pullzoomview:1.0.0'
+
+    // compile 'cn.weidongjian.android:popupWindowHelper:0.5'
+
+    //compile 'com.pkmmte.view:circularimageview:1.1'//https://github.com/Pkmmte/CircularImageView
+
+    // compile 'com.github.JimiSmith:PinnedHeaderListView:-SNAPSHOT'
+
+    // 	  compile 'com.github.arcadefire:nice-spinner:-SNAPSHOT' //    下拉框 https://github.com/arcadefire/nice-spinner
+    //    compile 'com.7heaven.widgets:segmentcontrol:1.16'//https://github.com/7heaven/SHSegmentControl
+
+    //compile 'com.github.klongmitre:android-segmented-control-view:-SNAPSHOT' //自定义RadioGroup实现的分段选择控件
+
+    //   compile 'com.bigkoo:convenientbanner:2.0.5'//广告栏控件，让你轻松实现广告头效果。支持无限循环
+
+    //compile 'com.github.iwgang:countdownview:2.1.2'//倒计时器
+
+    //compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.3'//小白也能轻松定制自己的刷新效果
+    //	        compile 'com.github.helloJp:WheelView:-SNAPSHOT' //Android滚动选择控件//https://github.com/helloJp/WheelView
+
+    //compile 'com.github.Kevin-Leung:VelocimeterViewTest:-SNAPSHOT' //刻度盘
+
+
+    //一个ui常用组件组
+    //    compile 'com.github.eluleci:flatui:3.0.0' //https://github.com/eluleci/FlatUI
+
+   //进度条
+   // compile 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    //按比例布局
+    //compile 'com.android.support:percent:22.2.0' //https://github.com/JulienGenoud/android-percent-support-lib-sample
+    //     一款用于在Android设备上获取照片（拍照或从相册、文件中选择）、裁剪图片、压缩图片的开源工具库 https://crazycodeboy.github.io/TakePhoto
+//    compile('com.jph.takephoto:takephoto_library:3.0.2') {
+//        exclude module: 'support-v4'
+//    }
+    //    compile 'com.github.xiaozhaoxu:TakePhoto-master:0.2'
+    //安卓6 权限处理
+    // compile 'com.github.lovedise:PermissionGen:-SNAPSHOT'
+
+    //类似QQ空间，微信朋友圈，微博主页等，展示图片的九宫格控件，自动根据图片的数量确定图片大小和控件大小，
+    //    compile 'com.lzy.widget:ninegridview:0.2.0'
+}

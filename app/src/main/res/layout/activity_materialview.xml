@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/button_bt_raise"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="BUTTON"
+                android:background="#0000ff"
+                app:rd_rippleType="wave"
+                app:rd_backgroundColor="#ff00ff"
+                app:rd_rippleColor="#00ff00" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkbox"
+            app:v_styleId="@array/text_title" />
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/switches_cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Checkbox 1"
+            app:v_styleId="@array/checkbox" />
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/switches_cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="Checkbox 2"
+
+
+            android:textColor="#0000ff"
+            app:cbd_boxSize="20dp"
+            app:cbd_height="30dp"
+            app:cbd_strokeColor="#00ff00"
+            app:cbd_tickColor="#ff00ff"
+            app:cbd_width="30dp" />
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/switches_cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="Checkbox 3" />
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio Button"
+            app:v_styleId="@array/text_title" />
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/switches_rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="Radio Button 1"
+            app:v_styleId="@array/radio_button" />
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/switches_rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="Radio Button 2"
+            app:v_styleId="@array/radio_button" />
+
+        <com.rey.material.widget.RadioButton
+            android:id="@+id/switches_rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="Radio Button 3"
+            app:v_styleId="@array/radio_button" />
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch"
+            app:v_styleId="@array/text_title" />
+
+        <com.rey.material.widget.Switch
+            android:id="@+id/switches_sw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="16dp"
+            app:v_styleId="@array/switches" />
+
+        <com.rey.material.widget.Switch
+            android:id="@+id/switches_sw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:gravity="center"
+            app:v_styleId="@array/switches" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>
