@@ -82,7 +82,9 @@
             android:checked="true"
             android:gravity="center_vertical"
             android:text="Radio Button 1"
-            app:v_styleId="@array/radio_button" />
+            app:rbd_strokeColor="#ff4404"
+
+            />
 
         <com.rey.material.widget.RadioButton
             android:id="@+id/switches_rb2"
