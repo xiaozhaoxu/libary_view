@@ -27,4 +27,8 @@
         <!--app:rcSecondaryProgress="90"-->
         <!--app:rcProgressColor="#00ff00"-->
         <!--app:rcSecondaryProgressColor="#ff0000"/>-->
+
+    <com.source.widget.edittextview.ClearEditText
+        android:layout_width="400dp"
+        android:layout_height="300dp" />
 </RelativeLayout>
