@@ -14,6 +14,8 @@ import android.widget.EditText;
 
 import com.source.widget.R;
 
+import static android.R.attr.start;
+
 /**
  * Created by zhaoxu2014 on 16/10/31.
  */
@@ -30,7 +32,11 @@ public class ClearEditText extends EditText implements
 
     private boolean showClearBox=true;
 
+    MyTextWatcher myTextWatcher;
 
+    public void setMyTextWatcher(MyTextWatcher myTextWatcher) {
+        this.myTextWatcher = myTextWatcher;
+    }
 
     public ClearEditText(Context context) {
         this(context, null);
@@ -140,17 +146,26 @@ public class ClearEditText extends EditText implements
         if(hasFoucs){
             setClearIconVisible(s.length() > 0);
         }
+        if(null!=myTextWatcher){
+            myTextWatcher.onTextChanged(s,  start,  count,
+             after);
+        }
     }
 
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count,
                                   int after) {
-
+        if(null!=myTextWatcher){
+            myTextWatcher.beforeTextChanged(s,  start,  count,
+                    after);
+        }
     }
 
     @Override
     public void afterTextChanged(Editable s) {
-
+        if(null!=myTextWatcher){
+            myTextWatcher.afterTextChanged(s);
+        }
     }
 
 
@@ -174,5 +189,8 @@ public class ClearEditText extends EditText implements
         return translateAnimation;
     }
 
+    public interface MyTextWatcher extends TextWatcher{
+
+    }
 
 }
