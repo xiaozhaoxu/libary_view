@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="rippelColor">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="dark">#FF292929</color>
+    <color name="desc">#FF454545</color>
+    <color name="article">#FFE5E5E5</color>
+    <color name="gray">#FF505050</color>
+    <color name="red">#ffff0033</color>
+    <color name="login_background">#EFEFEF</color>
+    <color name="login_text">#8d9389</color>
+    <color name="pad_detail_text">#8b93a3</color>
+    <color name="half_round">#FFA6A8A9</color>
+    <color name="pad_rec_text">#9ca4b7</color>
+    <color name="pad_main_layout_back">#AA000000</color>
+    <color name="history_splitter">#00262626</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="black">#000000</color>
 
+    <color name="transparent_gray">#6e232526</color>
+    <color name="transparent_red">#6eff0033</color>
+    <color name="transparent_white">#6eFFFFFF</color>
+    <color name="transparent_black">#a0000000</color>
+    <color name="transparent_small_black">#50000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

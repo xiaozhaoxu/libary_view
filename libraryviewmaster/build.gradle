@@ -52,7 +52,7 @@ dependencies {
 
     //compile 'com.github.iwgang:countdownview:2.1.2'//倒计时器
 
-    //compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.3'//小白也能轻松定制自己的刷新效果
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.3'//小白也能轻松定制自己的刷新效果
     //	        compile 'com.github.helloJp:WheelView:-SNAPSHOT' //Android滚动选择控件//https://github.com/helloJp/WheelView
 
     //compile 'com.github.Kevin-Leung:VelocimeterViewTest:-SNAPSHOT' //刻度盘
